@@ -25,6 +25,11 @@ const config = {
         test: /\.jsx?$/,
         exclude: [NODE_MODULES_PATH],
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+        include: /flexboxgrid/
       }
     ]
   }
